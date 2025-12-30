@@ -1,0 +1,118 @@
+====================================================================
+         ASSESSMENT SHEET EXTRACTOR - QUICK START GUIDE
+====================================================================
+
+REQUIREMENTS:
+- Python 3.8 or higher (Download from: https://www.python.org/downloads/)
+- Windows Operating System
+
+====================================================================
+                    HOW TO RUN THE APPLICATION
+====================================================================
+
+1. DOUBLE-CLICK "install_and_run.bat"
+
+   First time:
+   - Creates virtual environment
+   - Installs required packages (takes 1-2 minutes)
+
+   Subsequent runs:
+   - Starts immediately
+
+2. WAIT FOR BROWSER TO OPEN
+
+   - Application will open in your default web browser
+   - URL: http://localhost:8501
+   - If browser doesn't open automatically, copy the URL manually
+
+3. UPLOAD YOUR PDF FILE
+
+   - Click "Browse files" button
+   - Select your assessment sheet PDF
+   - Supported format: Assessment sheets with L2/L3/L4 interview data
+
+4. PROCESS THE FILE
+
+   - Click "Process File" button
+   - Wait for processing (usually 1-5 seconds)
+   - Review the extracted data in the preview table
+
+5. DOWNLOAD THE RESULTS
+
+   - Click "Download Excel File" button
+   - File will be saved to your Downloads folder
+   - Filename: [original_name]_extracted.xlsx
+
+====================================================================
+                       OUTPUT FORMAT
+====================================================================
+
+The Excel file contains 4 columns:
+- Name: Candidate's name
+- Interview Level: L2, L3, or L4
+- Assessment Area: Skill/area assessed
+- Score: Numeric score (can be empty)
+
+====================================================================
+                      TROUBLESHOOTING
+====================================================================
+
+PROBLEM: "Python is not installed or not in PATH"
+SOLUTION:
+- Install Python from https://www.python.org/downloads/
+- During installation, CHECK "Add Python to PATH"
+- Restart your computer and try again
+
+PROBLEM: Browser doesn't open automatically
+SOLUTION:
+- Look for the URL in the command window (usually http://localhost:8501)
+- Open your web browser manually
+- Type the URL in the address bar
+
+PROBLEM: "No data could be extracted from the PDF"
+SOLUTION:
+- Ensure PDF follows the expected format
+- Check that PDF contains "Candidate's Details" section
+- Verify interview sections are labeled as "L2/L3/L4 Interview on"
+- Make sure tables have "Sr. No", "Assessment Area", "Score" columns
+
+PROBLEM: Application won't start
+SOLUTION:
+- Close any running instances
+- Delete the "venv" folder
+- Run "install_and_run.bat" again
+
+====================================================================
+                       CLOSING THE APP
+====================================================================
+
+To stop the application:
+1. Go to the command window
+2. Press Ctrl+C
+3. Close the browser tab
+
+====================================================================
+                          SUPPORT
+====================================================================
+
+For issues or questions:
+- Check README.md for detailed documentation
+- Ensure your PDF matches the expected format
+- Contact your IT support team
+
+====================================================================
+                      FILE INFORMATION
+====================================================================
+
+Main Files:
+- install_and_run.bat : Launcher script
+- app.py : Main application
+- pdf_extractor.py : PDF processing logic
+- requirements.txt : List of dependencies
+
+Generated Files (safe to delete):
+- venv/ : Virtual environment folder
+- output.xlsx : Test output file
+- __pycache__/ : Python cache folder
+
+====================================================================
